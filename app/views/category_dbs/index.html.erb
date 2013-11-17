@@ -1,0 +1,31 @@
+<h1>Listing category_dbs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cid</th>
+      <th>Catname</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @category_dbs.each do |category_db| %>
+      <tr>
+        <td><%= category_db.cid %></td>
+        <td><%= category_db.catname %></td>
+        <td><%= category_db.description %></td>
+        <td><%= link_to 'Show', category_db %></td>
+        <td><%= link_to 'Edit', edit_category_db_path(category_db) %></td>
+        <td><%= link_to 'Destroy', category_db, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Category db', new_category_db_path %>

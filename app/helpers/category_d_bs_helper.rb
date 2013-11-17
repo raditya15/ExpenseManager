@@ -1,0 +1,2 @@
+module CategoryDBsHelper
+end
