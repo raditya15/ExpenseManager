@@ -1,0 +1,7 @@
+Expense Manager is a Web Application to store your day to day expenses . It also comes with reporting tools to view all your expenses in table or charts . 
+
+Framework	: Rails
+
+Database 	: SQLite3
+
+This is my first application being built on Rails Framework . Will add more info soon . 
